@@ -1,33 +1,4 @@
 .CategoryList {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  gap: 20px;
-  padding: 20px;
-  background-color: #74961f;
-  border-radius: 40px;
-}
-
-.CategoryList li {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
-  padding-right: 15px;
-}
-
-.CategoryList li a {
-  display: block;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1px 10px;
-  border-radius: 10px;
-  text-decoration: none;
-  margin: 15px;
-}
-
-.CategoryList li a:hover {
-  background-color: #ff0000;
+  
 }
