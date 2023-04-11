@@ -8,3 +8,9 @@
   background-color: #74961f;
   border-radius: 40px;
 }
+
+.CategoryList h2 {
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+}
