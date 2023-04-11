@@ -31,3 +31,8 @@
   text-decoration: none;
   font-weight: bold;
 }
+
+.CategoryList li a:hover {
+  background-color: #74961f;
+  color: #fff;
+}
