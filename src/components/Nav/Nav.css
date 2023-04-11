@@ -17,7 +17,7 @@
   margin: 0 15px;
   padding: 10px;
   border-radius: 10px;
-  background-color: #fff;
+  background: linear-gradient(90deg, rgb(88, 87, 114) 0%, rgb(65, 138, 36) 35%, rgb(255, 119, 0) 100%);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
@@ -29,7 +29,7 @@
 
 .NavItem a {
   text-decoration: none;
-  color: #333;
+  color: #fffcfc;
   font-size: 1.2rem;
   font-weight: bold;
 }
