@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
 .Nav {
-  background-color: #F4F4F4;
+  background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 15px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .Nav ul {
@@ -30,8 +33,8 @@
 .NavItem a {
   text-decoration: none;
   color: #fffcfc;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 17;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 768px) {
