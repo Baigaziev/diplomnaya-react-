@@ -1,38 +1,78 @@
 .CategoryList {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.CategoryList h2 {
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.CategoryList ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
 
-  gap: 20px;
-  padding: 20px;
-  background-color: #74961f;
-  border-radius: 40px;
-}
-.CategoryList h2 {
-  
-  font-size: 1.5rem;
-  text-align: center;
-  color: #fff;
-}
 .CategoryList li {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
-  padding-right: 15px;
+  margin: 10px;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+  transition:  0.3s ease-in-out;
+}
+
+.CategoryList li:hover {
+  transform: scale(1.05);
 }
 
 .CategoryList li a {
   display: block;
-  background-color: #333;
-  color: #fff;
+  padding: 15px;
+  color: #333;
   text-align: center;
-  padding: 1px 10px;
-  border-radius: 10px;
+  font-size: 18px;
   text-decoration: none;
-  margin: 15px;
 }
 
-.CategoryList li a:hover {
-  background-color: #ff0000;
+.CategoryList li a:before {
+  content: '';
+  display: block;
+  height: 10px;
+  background-color: #a21919;
+  opacity: 0.6;
+  transition:  0.3s ease-in-out;
+}
+
+.CategoryList li a:hover:before {
+  opacity: 1;
+}
+
+.CategoryList li a:after {
+  content: '';
+  display: block;
+  height: 10px;
+  background-color: #16b636;
+  opacity: 0.6;
+  transition:  0.3s ease-in-out;
+}
+
+.CategoryList li a:hover:after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .CategoryList ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CategoryList li {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
