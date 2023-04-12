@@ -3,7 +3,7 @@
 .Nav {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 15px;
+  padding: 10px;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -18,7 +18,7 @@
 
 .NavItem {
   margin: 0 15px;
-  padding: 10px;
+  padding: 6px;
   border-radius: 10px;
   background: linear-gradient(#2f2f2f, #4f4f4f);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
