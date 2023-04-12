@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 .CategoryList {
-  background: linear-gradient(90deg, rgb(40, 40, 46) 0%, rgb(65, 138, 36) 35%, rgb(255, 119, 0) 100%);
+  background: linear-gradient(#3498db, #2980b9);
   border-radius: 10px;
   padding: 20px;
   font-family: 'Roboto Slab', serif;
