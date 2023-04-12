@@ -2,28 +2,40 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
-
-  
 }
 
 .ProductList__item {
-  width: calc(25% - 10px);
+  width: calc(33.33% - 10px);
   margin-bottom: 20px;
-  
+  margin-right: 20px;
+}
+
+.ProductList__item:last-child {
+  margin-right: 0;
 }
 
 @media (max-width: 768px) {
   .ProductList__item {
-    width: calc(33.3333% - 10px);
+    width: calc(50% - 10px);
+    margin-right: 0;
+  }
+
+  .ProductList__item:last-child {
+    margin-right: 20px;
   }
 }
 
 @media (max-width: 576px) {
   .ProductList__item {
-    width: calc(50% - 10px);
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .ProductList__item:last-child {
+    margin-right: 0;
   }
 }
+
 .ProductList__item img {
   width: 200px;
   height: 150px;
