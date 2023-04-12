@@ -5,9 +5,9 @@
 }
 
 .ProductList__item {
-  width: calc(33.33% - 10px);
+  width: calc(29.33% - 10px);
   margin-bottom: 20px;
-  margin-right: 20px;
+ 
 }
 
 .ProductList__item:last-child {
