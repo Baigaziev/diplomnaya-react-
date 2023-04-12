@@ -8,10 +8,10 @@ export default function Category() {
     {id:1,name:" Keyboards", slug:"keyboards"},
     {id:2,name:"Mice", slug:"mice"},
     {id:3,name:"Headphones",slug:"headphones"},
-    {id:4,name:"Joysticks and Gamepads", slug:"joysticks-and-gamepads"},
-    {id:5,name:"Rugs",slug:"rugs"},
-    {id:6,name:"Graphic tablets",slug:"graphic-tablets"},
-    {id:7,name:"Computers and Laptops",slug:"computers-and-laptops"},
+    {id:4,name:"Joysticks ", slug:"joysticks"},
+    {id:5,name:"Armchairs",slug:"armchairs"},
+    {id:6,name:" Tablets",slug:"tablets"},
+    {id:7,name:"Computers ",slug:"computers"},
   ];
 
   const category = categories.find( 
