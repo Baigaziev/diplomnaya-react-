@@ -1,4 +1,26 @@
-.keyboards {
-  width: 200px;
-  height: 200px;
+.ProductList {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.ProductList__item {
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .ProductList__item {
+    width: calc(33.3333% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .ProductList__item {
+    width: calc(50% - 10px);
+  }
+}
+.ProductList__item img {
+  width: 150px;
+  height: 150px;
 }
