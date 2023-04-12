@@ -17,18 +17,21 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  
+  
 }
 
 .CategoryList li {
   margin-bottom: 5px;
+  background-color: #d60f0f;
 }
 
 .CategoryList a {
   display: block;
   padding: 10px;
   border-radius: 5px;
-  color: #333;
-  background-color: #fff;
+  color: #f6f2f2;
+  background-color: #eaeaea;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
@@ -39,8 +42,8 @@
 }
 
 .CategoryList a:nth-child(odd) {
-  background-color: #9ac7cf;
-  color: #fff;
+  background-color: #300977bd;
+  color: #0dd747;
 }
 
 .CategoryList a:nth-child(even) {
