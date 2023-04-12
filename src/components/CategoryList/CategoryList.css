@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 .CategoryList {
+  margin-top: 76px;
   background-color: #f7f7f7;
   padding: 20px;
   border-radius: 10px;
