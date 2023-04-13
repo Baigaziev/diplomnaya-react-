@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className='About'>
       <h1>About</h1>
-      <p>This is my page</p>
+      <p>Кош Келин укам</p>
       </div>
   )
 }
