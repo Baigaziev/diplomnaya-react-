@@ -4,13 +4,14 @@ import "./ProductList.css";
 
 import React, { useContext } from "react";
 
-export default function ProductList() {
+export default function ProductList({category}) {
   const { products } = useContext(AppContext);
 
-  const output = products.map(product => (
+  const output = products.filter(product => product.category === category.id)
+  .map(product => (
     <div key={product.id} className="ProductList__item">
       <img src={product.picture} alt={product.name} />
-      <NavLink to={'/product/' + product.slug}>
+      <NavLink to={'/products/' + product.slug}>
         {product.name}
       </NavLink>
       <span>{product.price} $</span>
