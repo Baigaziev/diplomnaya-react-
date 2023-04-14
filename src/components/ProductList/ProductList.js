@@ -13,7 +13,7 @@ export default function ProductList() {
       <NavLink to={'/product/' + product.slug}>
         {product.name}
       </NavLink>
-      <span>{product.price} dollar</span>
+      <span>{product.price} $</span>
     </div>
   ));
 
