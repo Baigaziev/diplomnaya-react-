@@ -19,7 +19,7 @@ export const AppContext = createContext({
 
 function App() {
   const [categories, setCategories] = useState([]);
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     // выполнить только однажды
@@ -36,7 +36,7 @@ function App() {
         );
       });
 
-      getDocs(productsCollection) // получить категории
+    getDocs(productsCollection) // получить категории
       .then(({ docs }) => {
         // когда категории загрузились
         setProducts(
@@ -48,22 +48,21 @@ function App() {
           }))
         );
       });
-      
   }, []);
   return (
     <div className="App">
-      <AppContext.Provider value={{categories, products}} >
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/delivery" element={<Delivery />} />
-          <Route path="/categories/:slug" element={<Category />} />
-          <Route path="/products/:slug" element={<Product />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
+      <AppContext.Provider value={{ categories, products }}>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/categories/:slug" element={<Category />} />
+            <Route path="/products/:slug" element={<Product />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
       </AppContext.Provider>
     </div>
   );
