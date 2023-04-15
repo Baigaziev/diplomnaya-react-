@@ -1,4 +1,4 @@
-import logo from "../../asests/logo.png"
+import logo from "../../asests/logo.png";
 import { NavLink } from "react-router-dom";
 import "./Logo.css";
 export default function Logo() {

@@ -7,7 +7,6 @@
 .ProductList__item {
   width: calc(29.33% - 10px);
   margin-bottom: 20px;
- 
 }
 
 .ProductList__item:last-child {
