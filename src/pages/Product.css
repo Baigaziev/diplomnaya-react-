@@ -25,3 +25,22 @@
   border-radius: 10px;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .Product {
+    margin: 20px auto;
+  }
+
+  .Product img {
+    max-width: 100%;
+  }
+
+  .Product h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .Product p {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
