@@ -10,30 +10,67 @@
   transition: all 0.3s ease-in-out;
 }
 
-
 .CartItem img {
-  width: 100%; 
+  width: 100%;
   max-width: 200px;
   height: auto;
   margin-bottom: 10px;
- 
 }
 
 .CartItem input[type="number"] {
-  width: 50px; 
+  width: 50px;
   margin-right: 10px;
   text-align: center;
   color: #8a2be2;
-  
 }
 
 .CartItem span {
-  margin-top: 10px; 
+  margin-top: 10px;
   font-weight: bold;
-  
 }
 
 .CartItem button {
-  margin-top: 10px; 
-  
+  margin-top: 10px;
+  background-color: #8b00ff;
+  color: #fff9f9;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
+@media only screen and (min-width: 768px) {
+  .CartList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .CartItem {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .CartItem {
+    width: calc(25% - 20px);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .CartItem {
+    width: calc(20% - 20px);
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .CartItem {
+    width: calc(16.6667% - 20px);
+  }
+
+  .CartItem:hover {
+    border: 2px solid #8a2be2;
+    box-shadow: 0px 0px 10px 0px rgba(138, 43, 226, 0.75);
+  }
+}
+
