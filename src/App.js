@@ -15,6 +15,9 @@ import Product from "./pages/Product";
 export const AppContext = createContext({
   categories: [],
   products: [],
+  //!Контекст для корзины
+  cart: [],
+  setCart: () => {},
 });
 
 function App() {
