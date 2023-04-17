@@ -1,9 +1,10 @@
 import React from 'react'
+import "./AddToCart.css"
 
-export default function AddToCart() {
+export default function AddToCart({product}) {
   return (
     <div className='AddToCart'>
-      AddToCart
+      <button>Add to cart</button>
       </div>
   )
 }
