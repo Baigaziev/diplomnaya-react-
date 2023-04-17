@@ -18,3 +18,8 @@
   margin-bottom: 10px;
  
 }
+
+.CartItem input[type="number"] {
+  width: 50px; 
+  
+}
