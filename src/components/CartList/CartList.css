@@ -21,5 +21,6 @@
 
 .CartItem input[type="number"] {
   width: 50px; 
+  margin-right: 10px;
   
 }
