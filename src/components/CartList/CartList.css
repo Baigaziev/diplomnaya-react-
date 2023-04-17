@@ -28,6 +28,7 @@
 }
 
 .CartItem span {
-  margin-top: 10px; /* Внешний отступ сверху */
+  margin-top: 10px; 
+  font-weight: bold;
   
 }
