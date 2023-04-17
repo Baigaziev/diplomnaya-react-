@@ -26,3 +26,8 @@
   color: #8a2be2;
   
 }
+
+.CartItem span {
+  margin-top: 10px; /* Внешний отступ сверху */
+  
+}
