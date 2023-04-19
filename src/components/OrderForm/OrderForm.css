@@ -2,4 +2,49 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.OrderForm h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #6c63ff;
+}
+
+.OrderForm label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.OrderForm input[type="text"],
+.OrderForm input[type="tel"],
+.OrderForm input[type="email"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #930cc9;
+  border-radius: 4px;
+}
+
+.OrderForm button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ac09c8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.OrderForm button:hover {
+  background-color: #5a4acf;
+}
+
+@media (max-width: 768px) {
+  .OrderForm {
+    margin: 0 1rem;
+  }
 }
