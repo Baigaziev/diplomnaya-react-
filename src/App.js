@@ -8,7 +8,7 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
-import { categoryCollection, productsCollection } from "./firebase";
+import { categoryCollection, onAuthChange, productsCollection } from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
@@ -20,6 +20,8 @@ export const AppContext = createContext({
   //!Контекст для корзины
   cart: {},
   setCart: () => {},
+  user: null,
+
 });
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
   const [cart, setCart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
   });
+const [user, setUser] = useState(null);
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -60,10 +63,13 @@ function App() {
           }))
         );
       });
+      onAuthChange(user => {
+        setUser(user);
+      })
   }, []);
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart, user }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
