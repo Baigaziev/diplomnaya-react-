@@ -11,6 +11,7 @@ import { getDocs } from "firebase/firestore/lite";
 import { categoryCollection, productsCollection } from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
+import ThankYou from "./pages/ThankYou";
 
 //! Создать контекст который будет хранить данные
 export const AppContext = createContext({
@@ -72,7 +73,10 @@ function App() {
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product />} />
+            <Route path="/thank-you" element={<ThankYou />} />
+
             <Route path="*" element={<NotFound />} />
+            
           </Routes>
         </Layout>
       </AppContext.Provider>
