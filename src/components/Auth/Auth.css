@@ -1,49 +1,48 @@
 .Auth {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.Auth button {
-  margin-left: 10px;
+.button-one,
+.button-two {
   border: none;
-  border-radius: 20px;
-  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-one {
+  background-color: #f9a826;
+}
+
+.button-two {
+  background-color: #e74040;
+}
+
+.button-one:hover,
+.button-two:hover {
+  background-color: #c68625;
+}
+
+span {
   font-size: 16px;
-  padding: 8px 16px;
-  text-transform: uppercase;
+  font-weight: bold;
+  color: #555;
 }
 
-.Auth .button-one {
-  background-color: #4285F4;
-}
-
-.Auth .button-one:hover {
-  background-color: #1A73E8;
-}
-
-.Auth .button-two {
-  background-color: #DB4437;
-}
-
-.Auth .button-two:hover {
-  background-color: #C6271E;
-}
-
-.Auth span {
-  color: #fff;
-  font-size: 16px;
-  margin-left: 10px;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .Auth {
     flex-direction: column;
-    align-items: flex-start;
   }
-
-  .Auth button {
-    margin: 10px 0 0 0;
+  
+  .button-one,
+  .button-two {
+    width: 100%;
   }
 }
