@@ -8,7 +8,12 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
-import { categoryCollection, onAuthChange, ordersCollection, productsCollection } from "./firebase";
+import {
+  categoryCollection,
+  onAuthChange,
+  ordersCollection,
+  productsCollection,
+} from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
@@ -23,7 +28,6 @@ export const AppContext = createContext({
   cart: {},
   setCart: () => {},
   user: null,
-
 });
 
 function App() {
@@ -33,7 +37,7 @@ function App() {
   const [cart, setCart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
   });
-const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -67,7 +71,7 @@ const [user, setUser] = useState(null);
         );
       });
 
-      getDocs(ordersCollection) // получить категории
+    getDocs(ordersCollection) // получить категории
       .then(({ docs }) => {
         // когда категории загрузились
         setOrders(
@@ -79,13 +83,15 @@ const [user, setUser] = useState(null);
           }))
         );
       });
-      onAuthChange(user => {
-        setUser(user);
-      })
+    onAuthChange((user) => {
+      setUser(user);
+    });
   }, []);
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }}>
+      <AppContext.Provider
+        value={{ categories, products, cart, setCart, user, orders }}
+      >
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -99,7 +105,6 @@ const [user, setUser] = useState(null);
             <Route path="/orders" element={<Orders />} />
 
             <Route path="*" element={<NotFound />} />
-            
           </Routes>
         </Layout>
       </AppContext.Provider>
