@@ -7,9 +7,9 @@ export default function Auth() {
 
   return (
     <div className="Auth">
-      {!user ? <button className="button-one" onClick={signIn}>SignIn</button> : null}
+      {!user ? <button className="button-one" onClick={signIn}>Sign In</button> : null}
       {user ? <span>{user.displayName}</span> : null}
-      {user ? <button className="button-two" onClick={signOff}>Signut</button> : null}
+      {user ? <button className="button-two" onClick={signOff}>Sign Ut</button> : null}
     </div>
   );
 }
