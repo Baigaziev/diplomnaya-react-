@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.ProductList a {
+  color: blueviolet;
+  text-decoration: none;
+}
 
 .ProductList__item {
   width: calc(29.33% - 10px);
