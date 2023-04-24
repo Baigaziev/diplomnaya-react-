@@ -12,7 +12,7 @@ export default function CartLink() {
   return (
     <div className="CartLink">
       <NavLink to="/cart">
-        Cart({total})
+        <img className="icon" src="https://img.freepik.com/premium-vector/pink-shopping-cart-semi-flat-color-vector-object_151150-9713.jpg" alt="icon" />({total})
         </NavLink>
     </div>
   );
