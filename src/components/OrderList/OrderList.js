@@ -9,6 +9,7 @@ export default function OrderList() {
   if (!orders.length || !products.length) {
     return "No orders found.";
   }
+
   //! Выводим все заказы
   const output = orders.map((order) => {
     //! Вывезти содерижимое корзины для этого заказа
@@ -20,20 +21,26 @@ export default function OrderList() {
       }
 
       return (
-        <div>
-          <img src={product.picture} alt={product.name} />
-          {product.name}: {order.cart[productId]} X {product.price} som ={" "}
-          {order.cart[productId] * product.price} som
+        <div className="OrderList-product">
+          <img src={product.picture} alt={product.name} className="OrderList-productImage" />
+          <div className="OrderList-productDetails">
+            <div className="OrderList-productName">{product.name}</div>
+            <div className="OrderList-productPrice">{product.price} som</div>
+            <div className="OrderList-productQuantity">Quantity: {order.cart[productId]}</div>
+            <div className="OrderList-productTotal">Total: {order.cart[productId] * product.price} som</div>
+          </div>
         </div>
       );
     });
 
     return (
-      <div className="Order">
-        <div>Name: {order.name}</div>
-        <div>Phone: {order.phone}</div>
-        <div>Address: {order.address}</div>
-        <div>Cart: {cartOutput}</div>
+      <div className="OrderList-order">
+        <div className="OrderList-orderHeader">
+          <div className="OrderList-orderName">Name: {order.name}</div>
+          <div className="OrderList-orderPhone">Phone: {order.phone}</div>
+          <div className="OrderList-orderAddress">Address: {order.address}</div>
+        </div>
+        <div className="OrderList-orderCart">{cartOutput}</div>
       </div>
     );
   });
