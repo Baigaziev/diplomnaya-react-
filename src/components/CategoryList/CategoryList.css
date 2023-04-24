@@ -24,9 +24,12 @@
 .CategoryList li {
   margin-bottom: 5px;
   background-color: #d60f0f;
+  
+
 }
 
 .CategoryList a {
+  
   display: block;
   padding: 10px;
   border-radius: 5px;
@@ -44,7 +47,7 @@
 
 .CategoryList a:nth-child(odd) {
   background-color: #300977bd;
-  color: #0dd747;
+  color: #ffffff;
 }
 
 .CategoryList a:nth-child(even) {
