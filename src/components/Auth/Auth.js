@@ -1,15 +1,24 @@
 import { useContext } from "react";
 import { logIn, logOut } from "../../firebase";
 import { AppContext } from "../../App";
+import { Link } from "react-router-dom";
 
 export default function Auth() {
   const { user } = useContext(AppContext);
 
   return (
     <div className="Auth">
-      {!user ? <button className="button-one" onClick={logIn}>SignIn</button> : null}
-      {user ? <span>{user.displayName}</span> : null}
-      {user ? <button className="button-two" onClick={logOut}>SignUp</button> : null}
+      {user ? (
+        <span>
+           <Link to="/orders">{user.displayName}</Link>!
+          <button onClick={logOut}>Sign out</button>
+        </span>
+      ) : (
+        <span>
+          Hello guest!
+          <button onClick={logIn}>Sign in</button>
+        </span>
+      )}
     </div>
   );
 }
