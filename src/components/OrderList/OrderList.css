@@ -1,66 +1,76 @@
-
 .OrderList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  justify-items: center;
 }
 
 .OrderList-order {
-  background-color: #9b59b6;
+  background-color: #c7ab10;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  width: 100%;
+  width: 90%;
+  box-sizing: border-box;
+  transition: all .4s ease-in-out;
+}
 
-  display: flex;
-  flex-direction: column;
+.OrderList-order:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
 }
 
 .OrderList-orderHeader {
-  margin-bottom: 10px;
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .OrderList-orderName {
-  font-size: 1.2rem;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 5px;
-  color: rgb(255, 255, 255);
 }
 
-.OrderList-orderPhone,
+.OrderList-orderPhone {
+  font-size: 16px;
+  color: #252525;
+  font-weight: bold;
+}
+
 .OrderList-orderAddress {
-  font-size: 1rem;
-  text-align: center;
-  margin-bottom: 5px;
-  color: rgb(255, 255, 255);
+  font-size: 16px;
+  color: #292929;
+  font-weight: bold;
 }
 
 .OrderList-orderCart {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .OrderList-product {
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  padding: 10px;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+  color: rgb(24, 24, 217);
+  transition: all 0.3s ease-in-out;
+}
+
+.OrderList-product:hover {
+  transform: scale(1.05);
 }
 
 .OrderList-productImage {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 90px;
   object-fit: cover;
+  border-radius: 5px;
   margin-right: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.OrderList-productImage:hover {
+  transform: rotate(-10deg) scale(1.1);
 }
 
 .OrderList-productDetails {
@@ -69,56 +79,25 @@
 }
 
 .OrderList-productName {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #9b59b6;
+  margin-bottom: 5px;
 }
 
 .OrderList-productPrice {
-  font-size: 1rem;
+  font-size: 16px;
+  color: #bc11d2;
   margin-bottom: 5px;
 }
 
-.OrderList-productQuantity,
+.OrderList-productQuantity {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #bc11d2;
+}
+
 .OrderList-productTotal {
-  font-size: 0.9rem;
-  margin-bottom: 5px;
-}
-
-@media only screen and (min-width: 768px) {
-  .OrderList {
-    gap: 30px;
-  }
-
-  .OrderList-order {
-    max-width: 500px;
-    width: 50%;
-  }
-
-  .OrderList-productImage {
-    width: 80px;
-    height: 80px;
-  }
-
-  .OrderList-productName {
-    font-size: 1.3rem;
-  }
-
-  .OrderList-productPrice {
-    font-size: 1.1rem;
-  }
-
-  .OrderList-productQuantity,
-  .OrderList-productTotal {
-    font-size: 1rem;
-  }
-
-  .OrderList-order:nth-child(odd) {
-    margin-right: 20px;
-  }
-
-  .OrderList-order:nth-child(even) {
-    margin-left: 20px;
-  }
+  font-size: 18px;
+  font-weight: bold;
+  color: #bc11d2;
 }
