@@ -29,12 +29,12 @@ export default function OrderList() {
           />
           <div className="OrderList-productDetails">
             <div className="OrderList-productName">{product.name}</div>
-            <div className="OrderList-productPrice">{product.price} som</div>
+            <div className="OrderList-productPrice">{product.price} $</div>
             <div className="OrderList-productQuantity">
               Quantity: {order.cart[productId]}
             </div>
             <div className="OrderList-productTotal">
-              Total: {order.cart[productId] * product.price} som
+              Total: {order.cart[productId] * product.price} $
             </div>
           </div>
         </div>
