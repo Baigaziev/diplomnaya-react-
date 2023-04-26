@@ -11,9 +11,11 @@ export default function Home() {
       </form>
       <div className="welcome-message">
         <h2>Welcome to our gadget store for gamers!</h2>
-        <p>Here you can find the latest and greatest gaming gadgets, all in one place.</p>
+        <p>
+          Here you can find the latest and greatest gaming gadgets, all in one
+          place.
+        </p>
       </div>
     </div>
   );
 }
-

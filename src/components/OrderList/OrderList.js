@@ -22,12 +22,20 @@ export default function OrderList() {
 
       return (
         <div className="OrderList-product">
-          <img src={product.picture} alt={product.name} className="OrderList-productImage" />
+          <img
+            src={product.picture}
+            alt={product.name}
+            className="OrderList-productImage"
+          />
           <div className="OrderList-productDetails">
             <div className="OrderList-productName">{product.name}</div>
             <div className="OrderList-productPrice">{product.price} som</div>
-            <div className="OrderList-productQuantity">Quantity: {order.cart[productId]}</div>
-            <div className="OrderList-productTotal">Total: {order.cart[productId] * product.price} som</div>
+            <div className="OrderList-productQuantity">
+              Quantity: {order.cart[productId]}
+            </div>
+            <div className="OrderList-productTotal">
+              Total: {order.cart[productId] * product.price} som
+            </div>
           </div>
         </div>
       );
