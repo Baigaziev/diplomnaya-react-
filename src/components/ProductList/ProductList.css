@@ -4,9 +4,10 @@
   justify-content: space-around;
 }
 .ProductList a {
-  color: rgb(146, 22, 22);
+  color: rgb(217, 233, 6);
   text-decoration: none;
 }
+
 .ProductList img {
   border-radius: 30px;
 }
