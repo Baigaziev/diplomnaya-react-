@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
+
 export default function Nav() {
   return (
     <nav className="Nav">
@@ -17,6 +18,16 @@ export default function Nav() {
         <li className="NavItem">
           <NavLink to="/delivery">Delivery</NavLink>
         </li>
+
+
+
+
+
+
+        
+        
+        
+        
       </ul>
     </nav>
   );
