@@ -1,1 +1,4 @@
 
+.welcome-message h2, p {
+  color: rgb(250, 229, 0);
+}
