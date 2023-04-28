@@ -17,7 +17,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+export const db = getFirestore(app);
 const auth = getAuth(app);
 //! получение списка категорий (колекции д)
 export const categoryCollection = collection(db, "categories");
@@ -32,6 +32,28 @@ export const onAuthChange =(callback) => onAuthStateChanged(auth, callback);
 
 export const onCategoriesLoad = (callback) =>
   onSnapshot(categoryCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
+
+
+  export const onProductsLoad = (callback) =>
+  onSnapshot(productsCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
+
+
+  export const onOrdersLoad = (callback) =>
+  onSnapshot(ordersCollection, (snapshot) =>
     callback(
       snapshot.docs.map((doc) => ({
         id: doc.id,
