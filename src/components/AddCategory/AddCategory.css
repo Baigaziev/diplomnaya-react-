@@ -1,0 +1,32 @@
+.AddCategory {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.AddCategory input[type="text"] {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.AddCategory button {
+  display: inline-block;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  background-color: #8355ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.AddCategory button:hover {
+  background-color: #6c3bd1;
+}
