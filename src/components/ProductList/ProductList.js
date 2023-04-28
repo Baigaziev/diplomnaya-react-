@@ -4,6 +4,7 @@ import "./ProductList.css";
 
 import React, { useContext } from "react";
 import AddToCart from "../AddToCart/AddToCart";
+import AddProduct from "../AddProduct/AddProduct";
 
 export default function ProductList({ category }) {
   const { products } = useContext(AppContext);
@@ -19,5 +20,9 @@ export default function ProductList({ category }) {
       </div>
     ));
 
-  return <div className="ProductList">{output}</div>;
+  return <div className="ProductList">
+    {output}
+
+    <AddProduct />
+    </div>;
 }
