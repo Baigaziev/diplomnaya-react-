@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
-
 .Nav {
-  margin-right: 150px;
   padding: 10px;
   font-family: "Roboto Slab", serif;
   width: 100%;
-  margin: 0;
 }
 .Nav ul {
   display: flex;
@@ -25,7 +22,7 @@
     rgb(75, 49, 180) 100%
   );
   box-shadow: 5 2 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  
 }
 
 .NavItem a {
