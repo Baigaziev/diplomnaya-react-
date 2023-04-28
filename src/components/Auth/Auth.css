@@ -1,48 +1,30 @@
-.Auth {
+.auth-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 
-.button-one,
-.button-two {
+.user-name {
+  text-decoration: none;
+  color: #c507d3;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.sign-in,
+.sign-out {
+  background-color: #5cb85c;
+  color: #fff;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
-  color: white;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
 }
 
-.button-one {
-  background-color: #f9a826;
-}
-
-.button-two {
-  background-color: #e74040;
-}
-
-.button-one:hover,
-.button-two:hover {
-  background-color: #c68625;
-}
-
-span {
-  font-size: 16px;
-  font-weight: bold;
-  color: #555;
-}
-
-@media screen and (max-width: 600px) {
-  .Auth {
+@media (max-width: 576px) {
+  .auth-container {
     flex-direction: column;
-  }
-
-  .button-one,
-  .button-two {
-    width: 100%;
+    gap: 5px;
   }
 }
