@@ -1,14 +1,10 @@
 .CartLink {
   display: flex;
   justify-content: flex-end;
-  
- 
-  
- 
 }
 .icon {
-  width: 50px;
-  
+  width: 60px;
+  height: 80px;
 }
 .CartLink a {
   display: flex;
