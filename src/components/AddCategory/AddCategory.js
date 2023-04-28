@@ -3,6 +3,7 @@ import "./AddCategory.css";
 import { addDoc } from "firebase/firestore";
 import { categoryCollection } from "../../firebase";
 import { AppContext } from "../../App";
+import "./AddCategory.css"
 
 export default function AddCategory() {
   const { user } = useContext(AppContext);
