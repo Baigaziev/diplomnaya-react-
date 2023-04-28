@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
 .CategoryList {
   margin-top: 76px;
-  background-color: #f7f7f7;
+
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 20px #8a2be2;
@@ -13,7 +13,7 @@
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #f7efef;
 }
 
 .CategoryList ul {
@@ -25,12 +25,9 @@
 .CategoryList li {
   margin-bottom: 5px;
   background-color: #d60f0f;
-  
-
 }
 
 .CategoryList a {
-  
   display: block;
   padding: 10px;
   border-radius: 5px;
