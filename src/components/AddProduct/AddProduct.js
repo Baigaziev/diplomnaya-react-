@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../../App";
+import "./AddProduct.css"
 
 export default function AddProduct() {
   const { user } = useContext(AppContext);
