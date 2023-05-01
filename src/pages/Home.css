@@ -2,3 +2,15 @@
 .welcome-message h2, p {
   color: rgb(250, 229, 0);
 }
+.fade-in {
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
