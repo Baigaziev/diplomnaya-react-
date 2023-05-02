@@ -18,6 +18,8 @@ export default function AddProduct() {
 
   return (
     <div className="AddProduct">
+
+      
       <form onSubmit={onFormSubmit}>
         <h3>Create a new product</h3>
         <label>
