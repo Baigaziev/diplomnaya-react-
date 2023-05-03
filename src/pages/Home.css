@@ -13,15 +13,22 @@ form {
   margin: 1rem;
 }
 input {
-  padding: 5px;
+  padding: 6px 5px;
   font-size: 15px;
+  margin-right: 5px;
   border-radius: 10px;
   border: none;
-  background-color: #f9f4ff;
+  background-color: #5b3286;
+  color: white;
 }
 
 button {
-  background-color: #008cba;
+  background: linear-gradient(
+    90deg,
+    rgb(89, 14, 113) 0%,
+    rgb(116, 9, 121) 35%,
+    rgb(134, 136, 6) 100%
+  );
   color: white;
   border-radius: 5px;
   border: none;
