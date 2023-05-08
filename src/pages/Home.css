@@ -2,16 +2,7 @@ form {
   display: flex;
   justify-content: flex-end;
 }
-.video-reviews {
-  display: flex;
-  flex-wrap: wrap;
-  
-  margin-top: 2rem;
-}
 
-.video-reviews iframe {
-  margin: 1rem;
-}
 input {
   padding: 6px 5px;
   font-size: 15px;
