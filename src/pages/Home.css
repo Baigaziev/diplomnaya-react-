@@ -62,3 +62,37 @@ button {
     opacity: 1;
   }
 }
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  overflow: hidden;
+  margin-right: 90px;
+}
+
+.image-container img {
+  display: block;
+  width: 900px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f00000;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .text-overlay {
+  opacity: 10;
+}
