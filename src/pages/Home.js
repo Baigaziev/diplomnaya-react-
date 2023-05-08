@@ -50,6 +50,37 @@ export default function Home() {
           place.
         </p>
       </div>
+
+      <div className="image-container">
+        <img src="https://gamerwall.pro/uploads/posts/2022-03/1648550623_1-gamerwall-pro-p-dzhoistiki-fon-krasivie-1.jpg"  alt="#" className="image" />
+        <p className="text-overlay">Text for Image 1</p>
+      </div>
+
+      <div className="image-container">
+        <img src="https://itunite.ru/upload/iblock/9ab/e6i8mqha3pru0ranxv3y7z535fwytnwe.jpg" alt="#" className="image" />
+        <p className="text-overlay">Text for Image 2</p>
+      </div>
+      <div className="image-container">
+        <img src="https://www.ferra.ru/imgs/2019/09/30/15/3587642/94169b6ebed1d65043d555c7dd9b06f35486f7e7.jpg" alt="#" className="image" />
+        <p className="text-overlay">Text for Image 2</p>
+      </div>
+      <div className="image-container">
+        <img src="https://ixbt.online/live/images/original/07/69/29/2023/03/02/45eaef666f.jpg" alt="#" className="image" />
+        <p className="text-overlay">Text for Image 2</p>
+      </div>
+
+      <div className="image-container">
+        <img src="https://4frag.ru/image/data/News/Zowie/razer-viper-8khz-news-1.jpg" alt="#" className="image" />
+        <p className="text-overlay">Text for Image 2</p>
+      </div>
+      <div className="image-container">
+        <img src="https://toptechnika.ru/wp-content/uploads/2022/05/Mechanical-Keyboard.webp" alt="#" className="image" />
+        <p className="text-overlay">Text for Image 2</p>
+      </div>
+      <div className="image-container">
+        <img src="https://cubiq.ru/wp-content/uploads/2019/11/kraken-v3-pro-1500x1000-1.jpg" alt="#" className="image" />
+        <p className="text-overlay">Text for Image 2</p>
+      </div>
     </div>
   );
 }
