@@ -19,7 +19,7 @@ export default function About() {
         </div>
         <div className="member">
           <img src={photo3} alt="Team Member 2" />
-          <h3>Baigaziev Aigul</h3>
+          <h3>Baigazieva Aigul</h3>
           <p>Co-Founder, SPONSOR</p>
           <p>Baigaziev Augul is the main sponsor of the site, which provides support and assistance in the development and promotion of business. With its investment, Aigul has enabled the site to get started and succeed in selling gadgets to gamers. Thanks to her generosity, the site has every opportunity to develop and improve its activities.</p>
         </div>
