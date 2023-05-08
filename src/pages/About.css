@@ -1,9 +1,13 @@
 .About {
   margin: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -26,6 +30,7 @@ h1, h2, h3, p {
   padding: 30px;
   border-radius: 10px;
   width: 240px;
+  animation: fadeIn 0.5s ease-out;
 }
 
 .member img {
@@ -36,6 +41,7 @@ h1, h2, h3, p {
   box-shadow: 1px 5px 10px rgba(151, 5, 171, 0.3);
   transition: all 0.3s ease-in-out;
   margin-bottom: 20px;
+  animation: scaleIn 1s ease-out;
 }
 
 .member img:hover {
@@ -45,13 +51,46 @@ h1, h2, h3, p {
 .member h3 {
   margin-top: 0;
   font-size: 24px;
-  color: #4a4a4a;
+  color: #000000;
+  animation: fadeInUp 0.7s ease-out;
 }
 
 .member p {
   margin-top: 10px;
   font-size: 16px;
-  color: #777777;
+  color: #64078c;
+  animation: fadeInUp 0.7s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
@@ -65,8 +104,8 @@ h1, h2, h3, p {
   }
 
   .member img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 
   .member h3 {
