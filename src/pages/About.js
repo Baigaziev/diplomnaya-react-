@@ -7,18 +7,20 @@ import photo3 from "../asests/photo3.jpg";
 export default function About() {
   return (
     <div className="About">
-      <div className="mission">
-        <h2>Our Mission</h2>
-        <p>
-          At our site, we believe that gaming is more than just a hobby, it's a
-          lifestyle. We created this site to provide gamers with the best
-          gadgets and accessories to enhance their gaming experience. We
-          understand the frustration of having low-quality equipment and how it
-          can negatively impact gameplay. That's why we offer high-quality and
-          reliable products at an affordable price. Our mission is to help
-          gamers reach their full potential and have the best gaming experience
-          possible.
-        </p>
+      <div class="mission-container">
+        <div class="mission">
+          <h2 class="mission-header">Our Mission</h2>
+          <p class="mission-text">
+            At our site, we believe that gaming is more than just a hobby, it's
+            a lifestyle. We created this site to provide gamers with the best
+            gadgets and accessories to enhance their gaming experience. We
+            understand the frustration of having low-quality equipment and how
+            it can negatively impact gameplay. That's why we offer high-quality
+            and reliable products at an affordable price. Our mission is to help
+            gamers reach their full potential and have the best gaming
+            experience possible.
+          </p>
+        </div>
       </div>
       <h1>Our Team</h1>
       <div className="team">
