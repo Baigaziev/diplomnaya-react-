@@ -86,7 +86,12 @@ p {
   margin: 0 auto;
   text-align: center;
 }
-
+.chat {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  
+}
 .mission-header {
   font-size: 36px;
   font-weight: bold;
