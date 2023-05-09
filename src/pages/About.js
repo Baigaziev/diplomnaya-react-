@@ -3,21 +3,18 @@ import "./About.css";
 import photo1 from "../asests/photo1.jpg";
 import photo2 from "../asests/photo2.jpg";
 import photo3 from "../asests/photo3.jpg";
-import  { useState, useEffect } from 'react';
-import io from 'socket.io-client';
+import { useState, useEffect } from "react";
+import io from "socket.io-client";
 
-const socket = io('http://localhost:4000'); // указываем адрес сервера Socket.IO
-
-
+const socket = io("http://localhost:4000"); // указываем адрес сервера Socket.IO
 
 export default function About() {
   const [messages, setMessages] = useState([]); // массив сообщений
-  const [inputValue, setInputValue] = useState(''); // значение поля ввода сообщения
-
+  const [inputValue, setInputValue] = useState(""); // значение поля ввода сообщения
 
   useEffect(() => {
     // обработчик для получения сообщений с сервера
-    socket.on('chat message', (message) => {
+    socket.on("chat message", (message) => {
       setMessages((messages) => [...messages, message]); // добавляем новое сообщение в массив
     });
 
@@ -29,15 +26,13 @@ export default function About() {
 
   // обработчик для отправки сообщения на сервер
   const sendMessage = () => {
-    socket.emit('chat message', inputValue);
-    setInputValue(''); // очищаем поле ввода сообщения
+    socket.emit("chat message", inputValue);
+    setInputValue(""); // очищаем поле ввода сообщения
   };
-
 
   return (
     <div className="About">
-
-<div className="chat">
+      <div className="chat">
         <div className="messages">
           {messages.map((message, index) => (
             <div key={index} className="message">
@@ -73,7 +68,6 @@ export default function About() {
         </div>
       </div>
 
-      
       <h1>Our Team</h1>
       <div className="team">
         <div className="member">
@@ -109,7 +103,7 @@ export default function About() {
           <p>
             Phone: <a href="tel:+1234567890">+1234567890</a>
           </p>
-          <a  className="link-instagtam" href="https://www.instagram.com/">
+          <a className="link-instagtam" href="https://www.instagram.com/">
             Instagram<i className="fab fa-instagram"></i>
           </a>
         </div>
