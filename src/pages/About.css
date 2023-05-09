@@ -78,7 +78,9 @@ p {
   padding: 100px;
   border-radius: 40px;
 }
-
+.link-instagtam {
+  color: #f2eeee;
+}
 .mission {
   max-width: 900px;
   margin: 0 auto;
