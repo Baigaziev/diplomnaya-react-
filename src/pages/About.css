@@ -25,10 +25,15 @@ p {
 
 .member {
   text-align: center;
-  background-color: #c8c8c8;
+  background: linear-gradient(
+    90deg,
+    rgb(89, 14, 113) 0%,
+    rgb(116, 9, 121) 35%,
+    rgb(75, 49, 180) 100%
+  );
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 40px;
   width: 240px;
   animation: fadeIn 0.5s ease-out;
 }
@@ -51,15 +56,93 @@ p {
 .member h3 {
   margin-top: 0;
   font-size: 24px;
-  color: #000000;
+  color: #e5e0e0;
   animation: fadeInUp 0.7s ease-out;
 }
 
 .member p {
   margin-top: 10px;
   font-size: 16px;
-  color: #292929;
+  color: #c6c4c4;
   animation: fadeInUp 0.7s ease-out;
+}
+
+/* styles for the mission section */
+.mission-container {
+  background: linear-gradient(
+    90deg,
+    rgb(89, 14, 113) 0%,
+    rgb(116, 9, 121) 35%,
+    rgb(75, 49, 180) 100%
+  );
+  padding: 100px;
+  border-radius: 40px;
+}
+
+.mission {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mission-header {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff8f8;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.mission-text {
+  font-size: 20px;
+  color: #f2eeee;
+  line-height: 1.6;
+}
+
+/* animation styles */
+.mission-header {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideInDown 1s ease forwards;
+}
+
+.mission-text {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideInUp 1s ease forwards;
+}
+
+/* animation keyframes */
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* responsive styles */
+@media only screen and (max-width: 768px) {
+  .mission-header {
+    font-size: 24px;
+  }
+
+  .mission-text {
+    font-size: 16px;
+  }
 }
 
 @keyframes fadeIn {
