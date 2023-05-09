@@ -27,6 +27,7 @@ export default function Home() {
       <form onSubmit={handleSubmit}>
         <label htmlFor="search">Search:</label>
         <input
+        placeholder="search by product"
           type="text"
           id="search"
           name="search"
