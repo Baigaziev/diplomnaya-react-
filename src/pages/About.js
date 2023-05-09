@@ -3,10 +3,60 @@ import "./About.css";
 import photo1 from "../asests/photo1.jpg";
 import photo2 from "../asests/photo2.jpg";
 import photo3 from "../asests/photo3.jpg";
+import  { useState, useEffect } from 'react';
+import io from 'socket.io-client';
+
+const socket = io('http://localhost:4000'); // указываем адрес сервера Socket.IO
+
+
 
 export default function About() {
+  const [messages, setMessages] = useState([]); // массив сообщений
+  const [inputValue, setInputValue] = useState(''); // значение поля ввода сообщения
+
+
+  useEffect(() => {
+    // обработчик для получения сообщений с сервера
+    socket.on('chat message', (message) => {
+      setMessages((messages) => [...messages, message]); // добавляем новое сообщение в массив
+    });
+
+    // отключаемся от сервера при размонтировании компонента
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
+
+  // обработчик для отправки сообщения на сервер
+  const sendMessage = () => {
+    socket.emit('chat message', inputValue);
+    setInputValue(''); // очищаем поле ввода сообщения
+  };
+
+
   return (
     <div className="About">
+
+<div className="chat">
+        <div className="messages">
+          {messages.map((message, index) => (
+            <div key={index} className="message">
+              {message}
+            </div>
+          ))}
+        </div>
+
+        <div className="input">
+          <input
+            type="text"
+            placeholder="Type a message"
+            value={inputValue}
+            onChange={(event) => setInputValue(event.target.value)}
+          />
+
+          <button onClick={sendMessage}>Send</button>
+        </div>
+      </div>
       <div class="mission-container">
         <div class="mission">
           <h2 class="mission-header">Our Mission</h2>
@@ -22,6 +72,8 @@ export default function About() {
           </p>
         </div>
       </div>
+
+      
       <h1>Our Team</h1>
       <div className="team">
         <div className="member">
@@ -39,7 +91,7 @@ export default function About() {
           <p>
             Phone: <a href="tel:+996702514897">+996702514897</a>
           </p>
-          <a href="https://www.instagram.com/">
+          <a className="link-instagtam" href="https://www.instagram.com/">
             Instagram<i className="fab fa-instagram"></i>
           </a>
         </div>
@@ -57,7 +109,7 @@ export default function About() {
           <p>
             Phone: <a href="tel:+1234567890">+1234567890</a>
           </p>
-          <a href="https://www.instagram.com/">
+          <a  className="link-instagtam" href="https://www.instagram.com/">
             Instagram<i className="fab fa-instagram"></i>
           </a>
         </div>
@@ -75,7 +127,7 @@ export default function About() {
           <p>
             Phone: <a href="tel:+1234567890">+1234567890</a>
           </p>
-          <a href="https://www.instagram.com/">
+          <a className="link-instagtam" href="https://www.instagram.com/">
             Instagram<i className="fab fa-instagram"></i>
           </a>
         </div>
