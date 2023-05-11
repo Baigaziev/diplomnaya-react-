@@ -48,7 +48,9 @@ button {
   text-align: center;
   color: yellow;
 }
-
+.image-container img {
+  border-radius: 10px;
+}
 .fade-in {
   animation-name: fade-in;
   animation-duration: 2s;
