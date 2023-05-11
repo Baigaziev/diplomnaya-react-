@@ -14,6 +14,8 @@
 .ProductList__item {
   width: calc(25.33% - 10px);
   margin-bottom: 20px;
+  color: rgb(254, 254, 254);
+  
 }
 
 .ProductList__item:last-child {
