@@ -21,7 +21,7 @@ export default function OrderList() {
       }
 
       return (
-        <div className="OrderList-product">
+        <div key={product.id} className="OrderList-product">
           <img
             src={product.picture}
             alt={product.name}
@@ -42,7 +42,7 @@ export default function OrderList() {
     });
 
     return (
-      <div className="OrderList-order">
+      <div key={order.id} className="OrderList-order">
         <div className="OrderList-orderHeader">
           <div className="OrderList-orderName">Name: {order.name}</div>
           <div className="OrderList-orderPhone">Phone: {order.phone}</div>
