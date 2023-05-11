@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Home.css";
 
+
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   const [previousSearch, setPreviousSearch] = useState("");
@@ -63,7 +64,7 @@ export default function Home() {
 
       <div className="image-container">
         <img
-          src="https://itunite.ru/upload/iblock/9ab/e6i8mqha3pru0ranxv3y7z535fwytnwe.jpg"
+          src="https://mishka-shop.com/upload/resize_cache/webp/iblock/aa3/1090_800_1/aa33d3185cb7815006457dec73925954.webp "
           alt="#"
           className="image"
         />
