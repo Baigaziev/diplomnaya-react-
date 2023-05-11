@@ -52,10 +52,10 @@ export default function About() {
           <button onClick={sendMessage}>Send</button>
         </div>
       </div>
-      <div class="mission-container">
-        <div class="mission">
-          <h2 class="mission-header">Our Mission</h2>
-          <p class="mission-text">
+      <div className="mission-container">
+        <div className="mission">
+          <h2 className="mission-header">Our Mission</h2>
+          <p className="mission-text">
             At our site, we believe that gaming is more than just a hobby, it's
             a lifestyle. We created this site to provide gamers with the best
             gadgets and accessories to enhance their gaming experience. We
