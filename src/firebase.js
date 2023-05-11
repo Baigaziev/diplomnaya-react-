@@ -4,7 +4,7 @@ import { getFirestore, collection, onSnapshot } from "firebase/firestore";
 import { GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDkbd6MDlMbyZ1bmTiUv-9w4cdqgk52sUg",
@@ -19,6 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 const auth = getAuth(app);
+export const storage = getStorage(app);
 //! получение списка категорий (колекции д)
 export const categoryCollection = collection(db, "categories");
 export const productsCollection = collection(db, "products");
@@ -61,3 +62,11 @@ export const onCategoriesLoad = (callback) =>
       }))
     )
   );
+
+  export const uploadProductPhoto = async (file) => {
+    const storageRef = ref(storage, `products/${file.name}`);
+    await uploadBytes(storageRef, file);
+  
+    const url = await getDownloadURL(storageRef);
+    return url;
+  };
