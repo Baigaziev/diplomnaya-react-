@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
+import { Slider } from "../components/Slide/Slide";
 
 
 export default function Home() {
@@ -22,9 +23,11 @@ export default function Home() {
     setPreviousSearch(searchTerm);
     setSearchTerm("");
   };
+  
 
   return (
     <div className="Home">
+      <Slider />
       <form onSubmit={handleSubmit}>
         <label htmlFor="search">Search:</label>
         <input
