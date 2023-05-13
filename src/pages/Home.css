@@ -1,5 +1,6 @@
 form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
@@ -98,3 +99,53 @@ button {
 .image-container:hover .text-overlay {
   opacity: 10;
 }
+
+@media screen and (max-width: 768px) {
+  form {
+  flex-direction: column;
+  }
+  
+  input {
+  margin-bottom: 5px;
+  }
+  
+  .image-container {
+  margin: 10px 0;
+  margin-right: 0;
+  text-align: center;
+  }
+  
+  .image-container img {
+  width: 100%;
+  max-width: 400px;
+  }
+  
+  .text-overlay {
+  font-size: 16px;
+  }
+  }
+  
+  @media screen and (max-width: 480px) {
+  input {
+  font-size: 14px;
+  padding: 5px;
+  }
+  
+  button {
+  font-size: 14px;
+  }
+  
+  .previous-search {
+  font-size: 14px;
+  }
+  
+  .welcome-message {
+  font-size: 18px;
+  }
+  
+  .text-overlay {
+  font-size: 14px;
+  }
+  }
+  
+  
