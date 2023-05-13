@@ -27,6 +27,7 @@
 .CartItem span {
   margin-top: 10px;
   font-weight: bold;
+  color: rgb(227, 19, 19);
 }
 
 .CartItem button {
