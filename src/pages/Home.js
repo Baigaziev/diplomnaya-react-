@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <div className="Home">
-      <Slider />
+      
       <form onSubmit={handleSubmit}>
         <label htmlFor="search">Search:</label>
         <input
@@ -55,7 +55,7 @@ export default function Home() {
           place.
         </p>
       </div>
-
+      <Slider />
       <div className="image-container">
         <img
           src="https://gamerwall.pro/uploads/posts/2022-03/1648550623_1-gamerwall-pro-p-dzhoistiki-fon-krasivie-1.jpg"
