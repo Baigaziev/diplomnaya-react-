@@ -33,30 +33,68 @@ export function Slider() {
   // Вычисляем индекс следующего слайда
   const nextImgIndex = activeIndex === img.length - 1 ? 0 : activeIndex + 1;
 
+  const handleControlClick = (index) => {
+    setActiveIndex(index);
+  };
+  
   return (
     <div className="slider">
-        <div className="slider-img slider-img-prev"
-                key={prevImgIndex}>
-            {img[prevImgIndex]}
-        </div>
-        <div className="slider-img"
-                key={activeIndex}>
-            {img[activeIndex]}
-        </div>
-        <div className="slider-img slider-img-next"
-                key={nextImgIndex}>
-            {img[nextImgIndex]}
-        </div>
+      <div className="slider-img slider-img-prev" key={prevImgIndex}>
+        {img[prevImgIndex]}
+      </div>
+      <div className="slider-img" key={activeIndex}>
+        {img[activeIndex]}
+      </div>
+      <div className="slider-img slider-img-next" key={nextImgIndex}>
+        {img[nextImgIndex]}
+      </div>
+      <div className="slider-controls">
+        {img.map((_, index) => (
+          <div
+            key={index}
+            className={`slider-control ${index === activeIndex && "active"}`}
+            onClick={() => handleControlClick(index)}
+          />
+        ))}
+      </div>
     </div>
-  )
+  );
+  
+  
+  
+  
+  
+  
+  
 }
 
 const img = [
-  <img key={photo4} src={photo4} alt="icon" />,
-  <img key={photo5} src={photo5} alt="icon-w" />,
-  <img key={photo6} src={photo6} alt="icon-r" />,
-  <img key={photo7} src={photo7} alt="icon-t" />,
-  <img key={photo8} src={photo8} alt="icon-n" />,
-  <img key={photo9} src={photo9} alt="icon-n" />,
-  <img key={photo10} src={photo10} alt="icon-n" />,
+  <div key={photo4} className="slider-img-container">
+    <img src={photo4} alt="icon" />
+    <span>Headphones</span>
+  </div>,
+  <div key={photo10} className="slider-img-container">
+    <img src={photo10} alt="icon-w" />
+    <span>Joysticks</span>
+  </div>,
+  <div key={photo6} className="slider-img-container">
+    <img src={photo6} alt="icon-r" />
+    <span>Keyboards</span>
+  </div>,
+  <div key={photo7} className="slider-img-container">
+    <img src={photo7} alt="icon-t" />
+    <span>Laptops</span>
+  </div>,
+  <div key={photo8} className="slider-img-container">
+    <img src={photo8} alt="icon-n" />
+    <span>Computers</span>
+  </div>,
+  <div key={photo9} className="slider-img-container">
+    <img src={photo9} alt="icon-n" />
+    <span>Armchairs</span>
+  </div>,
+  <div key={photo5} className="slider-img-container">
+    <img src={photo5} alt="icon-n" />
+    <span>Mice</span>
+  </div>,
 ];
