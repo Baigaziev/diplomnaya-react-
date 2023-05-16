@@ -4,20 +4,6 @@ import "./Contact.css";
 export default function Contact() {
   return (
     <div className="Contact">
-      <div className="info">
-        <h1>Contact</h1>
-        <p>
-          Phone number: <a href="tel:+99702514897">+996702514897</a>
-        </p>
-        <p>
-          Email:{" "}
-          <a href="mailto:albertto_dourio@mail.ru">albertto_dourio@mail.ru</a>
-        </p>
-        <p>Physical address: 123 Main St, Anytown USA</p>
-        <p>Legal address: 456 Oak St, Anytown USA</p>
-        <p>Hours of operation: Monday - Friday, 9am - 5pm</p>
-      </div>
-
       <h2>Marketing and Events Department</h2>
       <h3>People you can contact</h3>
       <div className="employee">
@@ -75,6 +61,19 @@ export default function Contact() {
         <p>Name: Sarah Brown</p>
         <p>Position: Sales Assistant</p>
         <p>Email: sarah.brown@example.com</p>
+      </div>
+      <div className="info">
+        <h1>Contact</h1>
+        <p>
+          Phone number: <a href="tel:+99702514897">+996702514897</a>
+        </p>
+        <p>
+          Email:{" "}
+          <a href="mailto:albertto_dourio@mail.ru">albertto_dourio@mail.ru</a>
+        </p>
+        <p>Physical address: 123 Main St, Anytown USA</p>
+        <p>Legal address: 456 Oak St, Anytown USA</p>
+        <p>Hours of operation: Monday - Friday, 9am - 5pm</p>
       </div>
     </div>
   );

@@ -9,10 +9,37 @@
   padding: 10px;
   transition: all 0.3s ease-in-out;
 }
+.CartItem a {
+  color: white;
+}
+.Cart h1 {
+  
+  text-align: center;
+  
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px #333;
+  animation-name: scale-in-center;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 .CartItem img {
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
   margin-bottom: 10px;
 }
