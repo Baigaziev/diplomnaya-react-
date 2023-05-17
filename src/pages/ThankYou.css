@@ -19,12 +19,15 @@
   width: 500px;
   height: auto;
 }
+.thank {
+  background-color: black;
+}
 
 h1, p {
   position: relative;
   color: #b20ccb;
   text-align: center;
-  background-color: black;
+ 
 }
 
 h1 {
@@ -44,6 +47,7 @@ p {
   text-align: center;
   animation: slideIn 1s ease-in-out;
   animation-delay: 1s;
+  background-color: black;
 }
 
 @keyframes slideIn {

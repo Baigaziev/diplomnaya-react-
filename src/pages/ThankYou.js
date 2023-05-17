@@ -7,9 +7,9 @@ export default function ThankYou() {
     <div className="ThankYou">
       <div className="ThankYouHeader">
         <img src="https://belon.club/uploads/posts/2023-04/1681470010_belon-club-p-ochen-radostnii-chelovek-oboi-2.jpg" alt="Thank You Icon" className="ThankYouIcon" />
-        <h1>Thank You!</h1>
+        <h1 className="thank">Thank You!</h1>
       </div>
-      <p>
+      <p className="thanks">
         Your order has been received. Our specialists will contact you shortly
         to confirm it.
       </p>
