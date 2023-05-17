@@ -100,3 +100,102 @@
   
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  .Contact {
+    padding: 10px;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .info p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
+  .employee {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .employee img {
+    width: 60%;
+  }
+
+  .Contact h2,
+  .Contact h3,
+  .Contact p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .Contact {
+    padding: 10px;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .info p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
+  .employee {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .employee img {
+    width: 60%;
+  }
+
+  .Contact h2,
+  .Contact h3,
+  .Contact p {
+    text-align: center;
+  }
+  
+  /* Дополнительные стили для мобильных устройств */
+  .Contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .info p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .employee {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .employee img {
+    width: 50%;
+  }
+}
