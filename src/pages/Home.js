@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Home.css";
-import { Slider } from "../components/Slide/Slide";
-
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -23,15 +21,13 @@ export default function Home() {
     setPreviousSearch(searchTerm);
     setSearchTerm("");
   };
-  
 
   return (
     <div className="Home">
-      
       <form onSubmit={handleSubmit}>
         <label htmlFor="search">Search:</label>
         <input
-        placeholder="search by product"
+          placeholder="search by product"
           type="text"
           id="search"
           name="search"
@@ -55,31 +51,31 @@ export default function Home() {
           place.
         </p>
       </div>
-      <Slider />
+      <div className="container">
       <div className="image-container">
         <img
           src="https://gamerwall.pro/uploads/posts/2022-03/1648550623_1-gamerwall-pro-p-dzhoistiki-fon-krasivie-1.jpg"
           alt="#"
           className="image"
         />
-        <p className="text-overlay">Text for Image 1</p>
+        <p className="text-overlay">Immerse yourself in the exciting world of games with our new joystick. Unique design, comfortable ergonomics and high functionality make it the perfect choice for any gamer. Feel every movement, every vibration, and enjoy unparalleled control over the gameplay. "</p>
       </div>
 
       <div className="image-container">
         <img
-          src="https://mishka-shop.com/upload/resize_cache/webp/iblock/aa3/1090_800_1/aa33d3185cb7815006457dec73925954.webp "
+          src="https://1k.by/images/site/news/2020/03/26/tdc111234c.jpg "
           alt="#"
           className="image"
         />
-        <p className="text-overlay">Text for Image 2</p>
+        <p className="text-overlay">Open the door to the exciting world of gaming with our powerful gaming laptop. Combining high performance and advanced technology, it will bring you amazing gaming emotion.</p>
       </div>
       <div className="image-container">
         <img
-          src="https://www.ferra.ru/imgs/2019/09/30/15/3587642/94169b6ebed1d65043d555c7dd9b06f35486f7e7.jpg"
+          src="https://hyperpc.ru/images/product/content_category/main/hyperpc-gaming-landing-mobile-banner_webp.jpg?4"
           alt="#"
           className="image"
         />
-        <p className="text-overlay">Text for Image 2</p>
+        <p className="text-overlay">Introducing our amazing gaming PCs, designed specifically for true gamers. With powerful processors and advanced graphics capabilities, they let you enjoy high-definition games with amazing detail and smooth gameplay.</p>
       </div>
       <div className="image-container">
         <img
@@ -87,7 +83,7 @@ export default function Home() {
           alt="#"
           className="image"
         />
-        <p className="text-overlay">Text for Image 2</p>
+        <p className="text-overlay">Discover amazing comfort and elegance from our gaming chairs! Designed with your comfort and gaming experience in mind, our chairs are the perfect companion for your gaming adventures.</p>
       </div>
 
       <div className="image-container">
@@ -96,7 +92,7 @@ export default function Home() {
           alt="#"
           className="image"
         />
-        <p className="text-overlay">Text for Image 2</p>
+        <p className="text-overlay">Create new horizons in the world of games with our gaming mice! Specially designed for gamers of all levels, they will be your reliable and stylish companion for your gaming adventures.</p>
       </div>
       <div className="image-container">
         <img
@@ -104,7 +100,7 @@ export default function Home() {
           alt="#"
           className="image"
         />
-        <p className="text-overlay">Text for Image 2</p>
+        <p className="text-overlay">Immerse yourself in the exciting world of gaming with our gaming keyboards! Stylish design, cutting-edge technology and unsurpassed quality come together in this perfect companion for your gaming sessions.</p>
       </div>
       <div className="image-container">
         <img
@@ -112,7 +108,8 @@ export default function Home() {
           alt="#"
           className="image"
         />
-        <p className="text-overlay">Text for Image 2</p>
+        <p className="text-overlay">Immersive audio immersion in gaming is what our gaming headphones offer. Feel every note, every rustle and every shot to make your gaming sessions a real adventure.</p>
+      </div>
       </div>
     </div>
   );
