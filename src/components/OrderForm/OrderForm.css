@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  color: #333;
+  color: #f9f5f5;
 }
 
 .OrderForm input[type="text"],
@@ -30,13 +30,6 @@
 
 .OrderForm button {
   padding: 0.5rem 1rem;
-  font-size: 1rem;
-  color: #620808;
-  background-color: #ac09c8;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
 }
 
 .OrderForm button:hover {
