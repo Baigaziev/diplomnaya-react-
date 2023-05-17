@@ -1,6 +1,6 @@
 .slider {
   position: relative;
-  width: 950px;
+  max-width: 950px;
   height: 478px;
   margin: auto;
   box-sizing: border-box;
