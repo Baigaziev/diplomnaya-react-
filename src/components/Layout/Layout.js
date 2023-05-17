@@ -5,6 +5,7 @@ import Logo from "../Logo/Logo";
 import CategoryList from "../CategoryList/CategoryList";
 import CartLink from "../CartLink/CartLink";
 import Auth from "../Auth/Auth";
+import { Slider } from "../Slide/Slide";
 
 export default function Layout(props) {
   return (
@@ -19,6 +20,9 @@ export default function Layout(props) {
       <aside>
         <CategoryList />
       </aside>
+      <div className="main-top">
+        <Slider />
+      </div>
 
       <main>{props.children}</main>
 
