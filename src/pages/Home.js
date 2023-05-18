@@ -8,7 +8,7 @@ export default function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const matchingProduct = products.find(
+    const matchingProduct = product.find(
       (product) => product.id === parseInt(searchTerm)
     );
     if (matchingProduct) {
@@ -115,7 +115,7 @@ export default function Home() {
   );
 }
 
-const products = [
+const product = [
   {
     id: 1,
     name: "Sony DualSense Edge",

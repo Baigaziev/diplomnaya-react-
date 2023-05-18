@@ -2,6 +2,7 @@ import React from "react";
 import "./ThankYou.css";
 
 
+
 export default function ThankYou() {
   return (
     <div className="ThankYou">
@@ -13,7 +14,7 @@ export default function ThankYou() {
         Your order has been received. Our specialists will contact you shortly
         to confirm it.
       </p>
-      <p>
+      <p className="thanks">
         We appreciate your business and thank you for choosing our products.
         Should you have any questions or need further assistance, please don't
         hesitate to reach out to our customer support team.
