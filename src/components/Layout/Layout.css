@@ -31,3 +31,8 @@ body {
 .Layout footer {
   grid-area: footer;
 }
+@media (max-width: 550px) {
+  .Layout header > .Nav {
+    display: none;
+  } 
+}
