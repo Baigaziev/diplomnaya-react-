@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./About.css";
 import photo1 from "../asests/photo1.jpg";
 import photo2 from "../asests/photo2.jpg";
 import photo3 from "../asests/photo3.jpg";
-import { useState, useEffect } from "react";
 import io from "socket.io-client";
 
 const socket = io("http://localhost:4000"); // указываем адрес сервера Socket.IO
@@ -11,6 +10,7 @@ const socket = io("http://localhost:4000"); // указываем адрес с�
 export default function About() {
   const [messages, setMessages] = useState([]); // массив сообщений
   const [inputValue, setInputValue] = useState(""); // значение поля ввода сообщения
+  const [showConfirmation, setShowConfirmation] = useState(false); // состояние отображения подтверждения
 
   useEffect(() => {
     // обработчик для получения сообщений с сервера
@@ -28,6 +28,7 @@ export default function About() {
   const sendMessage = () => {
     socket.emit("chat message", inputValue);
     setInputValue(""); // очищаем поле ввода сообщения
+    setShowConfirmation(true); // показываем подтверждение
   };
 
   return (
@@ -52,21 +53,14 @@ export default function About() {
           <button onClick={sendMessage}>Send</button>
         </div>
       </div>
-      <div className="mission-container">
-        <div className="mission">
-          <h2 className="mission-header">Our Mission</h2>
-          <p className="mission-text">
-            At our site, we believe that gaming is more than just a hobby, it's
-            a lifestyle. We created this site to provide gamers with the best
-            gadgets and accessories to enhance their gaming experience. We
-            understand the frustration of having low-quality equipment and how
-            it can negatively impact gameplay. That's why we offer high-quality
-            and reliable products at an affordable price. Our mission is to help
-            gamers reach their full potential and have the best gaming
-            experience possible.
-          </p>
-        </div>
-      </div>
+
+      {showConfirmation && (
+        <p className="confirmation">
+          We have received your thoughts. Thank you for your response.
+        </p>
+      )}
+
+      
 
       <h1>Our Team</h1>
       <div className="team">
@@ -124,6 +118,21 @@ export default function About() {
           <a className="link-instagtam" href="https://www.instagram.com/">
             Instagram<i className="fab fa-instagram"></i>
           </a>
+        </div>
+      </div>
+      <div className="mission-container">
+        <div className="mission">
+          <h2 className="mission-header">Our Mission</h2>
+          <p className="mission-text">
+            At our site, we believe that gaming is more than just a hobby, it's
+            a lifestyle. We created this site to provide gamers with the best
+            gadgets and accessories to enhance their gaming experience. We
+            understand the frustration of having low-quality equipment and how
+            it can negatively impact gameplay. That's why we offer high-quality
+            and reliable products at an affordable price. Our mission is to help
+            gamers reach their full potential and have the best gaming
+            experience possible.
+          </p>
         </div>
       </div>
     </div>
