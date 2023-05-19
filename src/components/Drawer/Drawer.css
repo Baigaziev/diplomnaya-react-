@@ -1,11 +1,11 @@
 .Drawer .content {
   padding: 1rem 0;
-  background-color: black;
   color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 190px;
   overflow: hidden;
-padding-left: 10px;
+  padding-left: 10px;
   position: fixed;
   top: 0;
   left: 1px;
@@ -13,10 +13,10 @@ padding-left: 10px;
   z-index: 100;
 
   transform: translateX(-300px);
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 .Drawer .backdrop {
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, 0.3);
 
   position: fixed;
   top: 0;
