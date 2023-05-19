@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Contact.css";
 
 export default function Contact() {
+  const bottomRef = useRef(null); // ссылка на последний элемент на странице
+
+  useEffect(() => {
+    // автоматический скролл до нижнего уровня страницы
+    bottomRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
   return (
     <div className="Contact">
+       <div ref={bottomRef} /> {/* ссылка на последний элемент */}
       <h2>Marketing and Events Department</h2>
       <h3>People you can contact</h3>
       <div className="employee">
@@ -34,7 +41,7 @@ export default function Contact() {
         <p>Email: bob.johnson@example.com</p>
       </div>
 
-      <h2>Sales Department</h2>
+      
       <div className="employee">
         <img
           src="https://avatars.mds.yandex.net/i?id=ab87b69855990cbecd611dff15e9392b485891cd-9182192-images-thumbs&n=13"
@@ -62,6 +69,7 @@ export default function Contact() {
         <p>Position: Sales Assistant</p>
         <p>Email: sarah.brown@example.com</p>
       </div>
+      <div className="Contacts">
       <div className="info">
         <h1>Contact</h1>
         <p>
@@ -71,10 +79,11 @@ export default function Contact() {
           Email:{" "}
           <a href="mailto:albertto_dourio@mail.ru">albertto_dourio@mail.ru</a>
         </p>
-        <p>Physical address: 123 Main St, Anytown USA</p>
-        <p>Legal address: 456 Oak St, Anytown USA</p>
-        <p>Hours of operation: Monday - Friday, 9am - 5pm</p>
+        <p className="address">Physical address: Kashka-suu 6 , Karakol KGS</p>
+        <p className="address">Legal address: 456 Oak St, Anytown USA</p>
+        <p className="hours">Hours of operation: Monday - Friday, 9am - 5pm</p>
       </div>
+    </div>
     </div>
   );
 }

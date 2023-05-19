@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./About.css";
 import photo1 from "../asests/photo1.jpg";
 import photo2 from "../asests/photo2.jpg";
@@ -12,6 +12,8 @@ export default function About() {
   const [inputValue, setInputValue] = useState(""); // значение поля ввода сообщения
   const [showConfirmation, setShowConfirmation] = useState(false); // состояние отображения подтверждения
 
+  const bottomRef = useRef(null); // ссылка на нижний элемент
+
   useEffect(() => {
     // обработчик для получения сообщений с сервера
     socket.on("chat message", (message) => {
@@ -23,6 +25,11 @@ export default function About() {
       socket.disconnect();
     };
   }, []);
+
+  useEffect(() => {
+    // автоматический скролл до нижней части страницы
+    bottomRef.current.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
 
   // обработчик для отправки сообщения на сервер
   const sendMessage = () => {
@@ -40,6 +47,7 @@ export default function About() {
               {message}
             </div>
           ))}
+          <div ref={bottomRef} /> {/* ссылка на нижний элемент */}
         </div>
 
         <div className="input">
