@@ -10,7 +10,7 @@ export default function Contact() {
   }, []);
   return (
     <div className="Contact">
-       <div ref={bottomRef} /> {/* ссылка на последний элемент */}
+      <div ref={bottomRef} /> {/* ссылка на последний элемент */}
       <h2>Marketing and Events Department</h2>
       <h3>People you can contact</h3>
       <div className="employee">
@@ -40,8 +40,6 @@ export default function Contact() {
         <p>Position: Marketing Assistant</p>
         <p>Email: bob.johnson@example.com</p>
       </div>
-
-      
       <div className="employee">
         <img
           src="https://avatars.mds.yandex.net/i?id=ab87b69855990cbecd611dff15e9392b485891cd-9182192-images-thumbs&n=13"
@@ -70,20 +68,24 @@ export default function Contact() {
         <p>Email: sarah.brown@example.com</p>
       </div>
       <div className="Contacts">
-      <div className="info">
-        <h1>Contact</h1>
-        <p>
-          Phone number: <a href="tel:+99702514897">+996702514897</a>
-        </p>
-        <p>
-          Email:{" "}
-          <a href="mailto:albertto_dourio@mail.ru">albertto_dourio@mail.ru</a>
-        </p>
-        <p className="address">Physical address: Kashka-suu 6 , Karakol KGS</p>
-        <p className="address">Legal address: 456 Oak St, Anytown USA</p>
-        <p className="hours">Hours of operation: Monday - Friday, 9am - 5pm</p>
+        <div className="info">
+          <h1>Contact</h1>
+          <p>
+            Phone number: <a href="tel:+99702514897">+996702514897</a>
+          </p>
+          <p>
+            Email:{" "}
+            <a href="mailto:albertto_dourio@mail.ru">albertto_dourio@mail.ru</a>
+          </p>
+          <p className="address">
+            Physical address: Kashka-suu 6 , Karakol KGS
+          </p>
+          <p className="address">Legal address: 456 Oak St, Anytown USA</p>
+          <p className="hours">
+            Hours of operation: Monday - Friday, 9am - 5pm
+          </p>
+        </div>
       </div>
-    </div>
     </div>
   );
 }

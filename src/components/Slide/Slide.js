@@ -36,7 +36,7 @@ export function Slider() {
   const handleControlClick = (index) => {
     setActiveIndex(index);
   };
-  
+
   return (
     <div className="slider">
       <div className="slider-img slider-img-prev" key={prevImgIndex}>
@@ -59,13 +59,6 @@ export function Slider() {
       </div>
     </div>
   );
-  
-  
-  
-  
-  
-  
-  
 }
 
 const img = [

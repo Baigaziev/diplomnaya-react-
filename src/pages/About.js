@@ -68,8 +68,6 @@ export default function About() {
         </p>
       )}
 
-      
-
       <h1>Our Team</h1>
       <div className="team">
         <div className="member">

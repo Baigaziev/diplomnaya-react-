@@ -11,23 +11,22 @@ export default function Delivery() {
   }, []);
 
   return (
-    
-    <div className="Delivery" > <div ref={bottomRef} /> {/* ссылка на последний элемент */}
-      
+    <div className="Delivery">
+      {" "}
+      <div ref={bottomRef} /> {/* ссылка на последний элемент */}
       <div className="Delivery-header">
-        
         <h1>Delivery</h1>
-        
-        
         <p>Fast and reliable delivery services</p>
       </div>
       <div className="Delivery-photos">
-        
         <img src={delivery1} alt="Delivery truck" />
       </div>
       <div className="Delivery-info">
         <h2>
-          <img src="https://fainaidea.com/wp-content/uploads/2014/07/dostavka_edj_kruglosutochno.jpg" alt="Delivery truck" />
+          <img
+            src="https://fainaidea.com/wp-content/uploads/2014/07/dostavka_edj_kruglosutochno.jpg"
+            alt="Delivery truck"
+          />
           Fast Delivery
         </h2>
         <p>
@@ -46,7 +45,6 @@ export default function Delivery() {
           covered.
         </p>
       </div>
-
       <div ref={bottomRef} /> {/* ссылка на последний элемент */}
     </div>
   );

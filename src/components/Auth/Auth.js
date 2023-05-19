@@ -11,15 +11,20 @@ export default function Auth() {
     <div className="auth-container">
       {user ? (
         <span>
-          <Link to="/orders" className="user-name">{user.displayName}</Link>
-          <button className="sign-out" onClick={logOut}>Sign out</button>
+          <Link to="/orders" className="user-name">
+            {user.displayName}
+          </Link>
+          <button className="sign-out" onClick={logOut}>
+            Sign out
+          </button>
         </span>
       ) : (
         <span>
-          <button className="sign-in" onClick={logIn}>Sign in</button>
+          <button className="sign-in" onClick={logIn}>
+            Sign in
+          </button>
         </span>
       )}
     </div>
   );
 }
-

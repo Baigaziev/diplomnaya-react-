@@ -1,5 +1,3 @@
-
-
 /* Общие стили */
 form {
   display: flex;
@@ -75,7 +73,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .image-container {
@@ -119,7 +116,7 @@ button {
   text-align: center;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.122);
-  
+
   /* Начальное состояние */
   opacity: 0;
   transition: opacity 1.3s ease;
@@ -151,13 +148,12 @@ button {
 }
 /* Адаптивность через media */
 
-
 /* Изменения для мобильных устройств */
 @media (max-width: 768px) {
   form {
     justify-content: center;
   }
-  
+
   .image-container:nth-child(1),
   .image-container:nth-child(4),
   .image-container:nth-child(7),
@@ -167,7 +163,7 @@ button {
   .image-container:nth-child(6) {
     flex-basis: 100%;
   }
-  
+
   .text-overlay {
     max-width: 100%;
     font-size: 1.2rem;

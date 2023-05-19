@@ -15,8 +15,8 @@ export default function CartList() {
     });
   }
 
-  function onItemRemove (product) {
-    const newCart = {...cart};
+  function onItemRemove(product) {
+    const newCart = { ...cart };
     delete newCart[product.id];
     setCart(newCart);
   }

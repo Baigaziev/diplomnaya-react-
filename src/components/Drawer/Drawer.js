@@ -1,5 +1,5 @@
 import Nav from "../Nav/Nav";
-import "./Drawer.css"
+import "./Drawer.css";
 
 function Drawer({ open, toggle }) {
   const drawerClassNames = `Drawer ${open ? "open" : ""}`;

@@ -2,8 +2,7 @@ import { AppContext } from "../../App";
 import "./CartLink.css";
 import { NavLink } from "react-router-dom";
 import React, { useContext } from "react";
-import korzinka from "../../asests/korzinka.png"
-
+import korzinka from "../../asests/korzinka.png";
 
 export default function CartLink() {
   const { cart } = useContext(AppContext);
@@ -14,7 +13,7 @@ export default function CartLink() {
     <div className="CartLink">
       <NavLink to="/cart">
         <img className="icon" src={korzinka} alt="icon" />({total})
-        </NavLink>
+      </NavLink>
     </div>
   );
 }
