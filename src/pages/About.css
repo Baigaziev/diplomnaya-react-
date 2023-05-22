@@ -18,7 +18,6 @@ p {
 .confirmation {
   position: absolute;
   margin-top: -20px;
-  left: 1000px;
 }
 .team {
   display: flex;
@@ -38,7 +37,7 @@ p {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   padding: 30px;
   border-radius: 40px;
-  width: 240px;
+  width: 300px;
   animation: fadeIn 0.5s ease-out;
 }
 
