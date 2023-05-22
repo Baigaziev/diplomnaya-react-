@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid #a60bd0;
+  border: 1px solid #a60bd0;
+  background-image:  url(https://img.freepik.com/free-photo/cool-geometric-triangular-figure-in-a-neon-laser-light-great-for-backgrounds-and-wallpapers_181624-9331.jpg?w=2000&t=st=1684569354~exp=1684569954~hmac=0c8d733afa53107761950161a2c4733fc2664c2a5c857d27ac1ff8d055ddc2ac);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   border-radius: 5px;
   justify-content: space-between;
   margin: 10px;
@@ -12,6 +16,7 @@
 .CartItem a {
   color: white;
 }
+
 .Cart h1 {
   text-align: center;
   color: white;
@@ -35,9 +40,8 @@
 }
 
 .CartItem img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  width: 200px;
+  height: 180px;
   margin-bottom: 10px;
 }
 
@@ -45,14 +49,14 @@
   width: 50px;
   margin-right: 10px;
   text-align: center;
-  color: #8a2be2;
+  color: #000000;
   margin-top: 6px;
 }
 
 .CartItem span {
   margin-top: 10px;
   font-weight: bold;
-  color: rgb(227, 19, 19);
+  color:yellow;
 }
 
 .CartItem button {
