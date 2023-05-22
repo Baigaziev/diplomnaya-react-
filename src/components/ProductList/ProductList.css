@@ -10,16 +10,16 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(
-    90deg,
-    rgb(89, 14, 113) 0%,
-    rgb(116, 9, 121) 35%,
-    rgb(75, 49, 180) 100%
-  );
+  background-image: url(https://phonoteka.org/uploads/posts/2022-02/1644290011_1-phonoteka-org-p-fon-gadzheti-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.ProductList span {
+  color: yellow;
+}
 .ProductList__item img {
   width: 100%;
   height: 230px;
