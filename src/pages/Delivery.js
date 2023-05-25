@@ -45,7 +45,7 @@ export default function Delivery() {
           covered.
         </p>
       </div>
-      <div ref={bottomRef} /> {/* ссылка на последний элемент */}
+      
     </div>
   );
 }
