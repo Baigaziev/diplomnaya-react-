@@ -10,7 +10,9 @@
   text-align: center;
   color: yellow;
 }
-
+.image-container {
+  margin-top: 50px;
+}
 .image-container img {
   border-radius: 10px;
 }

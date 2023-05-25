@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./ThankYou.css";
 
 export default function ThankYou() {
+  const bottomRef = useRef(null); // ссылка на последний элемент на странице
+
+  useEffect(() => {
+    // автоматический скролл до нижнего уровня страницы
+    bottomRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
   return (
     <div className="ThankYou">
+      <div ref={bottomRef} /> {/* ссылка на последний элемент */}
       <div className="ThankYouHeader">
         <img
           src="https://belon.club/uploads/posts/2023-04/1681470010_belon-club-p-ochen-radostnii-chelovek-oboi-2.jpg"

@@ -2,7 +2,12 @@
   display: none;
   padding: 0;
   cursor: pointer;
-  background-color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgb(89, 14, 113) 0%,
+    rgb(116, 9, 121) 35%,
+    rgb(75, 49, 180) 100%
+  );
   border: none;
 }
 .NavToggle .line {
@@ -11,7 +16,7 @@
   height: 3px;
   margin: 6px auto;
   background-color: rgb(21, 21, 21);
-  transition: 0.2s;
+  transition: 0.4s;
 }
 @media (max-width: 550px) {
   .NavToggle {

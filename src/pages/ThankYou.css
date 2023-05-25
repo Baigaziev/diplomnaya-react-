@@ -1,82 +1,50 @@
 .ThankYou {
-  position: relative;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
 }
 
 .ThankYouHeader {
-  position: relative;
-  background-image: url("https://belon.club/uploads/posts/2023-04/1681470010_belon-club-p-ochen-radostnii-chelovek-oboi-2.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .ThankYouIcon {
-  width: 500px;
-  height: auto;
+  width: 900px;
+  height: 400px;
 }
+
 .thank {
-  background-color: black;
-}
-
-h1,
-p {
-  position: relative;
-  color: #b20ccb;
-  text-align: center;
-}
-
-h1 {
-  font-size: 32px;
-  animation: slideIn 1s ease-in-out;
-}
-
-p {
-  font-size: 16px;
-  animation: slideIn 1s ease-in-out;
-  animation-delay: 0.5s;
+  font-size: 24px;
+  color: #333;
   margin-top: 10px;
+}
+
+.thanks {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
 }
 
 .ContactDetails {
   margin-top: 20px;
-  text-align: center;
-  animation: slideIn 1s ease-in-out;
-  animation-delay: 1s;
-  background-color: black;
+  font-size: 16px;
+  color: #777;
 }
 
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.ContactDetails p {
+  margin: 5px 0;
 }
 
-/* Медиа-запросы для адаптивности */
+.ContactDetails a {
+  color: #555;
+  text-decoration: none;
+}
 
-@media screen and (max-width: 768px) {
-  .ThankYouHeader {
-    height: 300px;
-  }
-
-  .ThankYouIcon {
-    width: 300px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 14px;
-  }
+.ContactDetails a:hover {
+  text-decoration: underline;
 }

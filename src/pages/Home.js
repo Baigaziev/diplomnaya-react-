@@ -1,9 +1,7 @@
-
 import "./Home.css";
 
 export default function Home() {
   return (
-    
     <div className="Home">
       <div className="welcome-message">
         <h2 className="fade-in">Welcome to our gadget store for gamers!</h2>
