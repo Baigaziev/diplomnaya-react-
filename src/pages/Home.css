@@ -1,10 +1,3 @@
-/* Общие стили */
-
-
-
-
-
-
 .welcome-message {
   margin-top: 50px;
   text-align: center;
@@ -70,7 +63,7 @@
 }
 
 .text-overlay {
-  max-width: 250px;
+  max-width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
