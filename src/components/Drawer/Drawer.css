@@ -1,7 +1,10 @@
 .Drawer .content {
   padding: 1rem 0;
   color: white;
-  background-color: black;
+  background-image: url(https://phonoteka.org/uploads/posts/2022-02/1644290011_1-phonoteka-org-p-fon-gadzheti-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 190px;
   overflow: hidden;
@@ -12,7 +15,7 @@
   bottom: 0;
   z-index: 100;
   transform: translateX(-300px);
-  transition: transform 0.3s;
+  transition: transform 0.9s;
 }
 .Drawer .backdrop {
   background-color: rgba(0, 0, 0, 0.3);
