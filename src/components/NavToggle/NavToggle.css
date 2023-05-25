@@ -22,4 +22,7 @@
   .NavToggle {
     display: inline-block;
   }
+  header > .Nav{
+    display: none;
+  }
 }

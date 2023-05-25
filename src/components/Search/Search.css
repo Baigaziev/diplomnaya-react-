@@ -22,8 +22,8 @@
 }
 .Search .SearchResults {
   position: absolute;
-  right: 400px;
-  top: 0;
+  
+  top: 50px;
   z-index: 99;
 }
 .Search .searcher {

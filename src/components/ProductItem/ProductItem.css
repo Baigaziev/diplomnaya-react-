@@ -1,10 +1,11 @@
 .ProductItem {
   position: relative;
   z-index: 99;
-  margin-bottom: 20px;
+ 
 }
 
 .ProductItem .Product {
+ 
   border: 1px solid #93359b;
   background-image: url(https://phonoteka.org/uploads/posts/2022-02/1644290011_1-phonoteka-org-p-fon-gadzheti-1.jpg);
   background-repeat: no-repeat;
