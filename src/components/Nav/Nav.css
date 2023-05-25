@@ -21,7 +21,19 @@
     rgb(116, 9, 121) 35%,
     rgb(75, 49, 180) 100%
   );
-  box-shadow: 5 2 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.NavItem:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(89, 14, 113) 0%,
+    rgb(116, 9, 121) 35%,
+    rgb(75, 49, 180) 100%
+  );
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .NavItem a {
