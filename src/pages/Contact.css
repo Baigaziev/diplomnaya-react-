@@ -61,12 +61,12 @@ h3 {
 .info h1 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
 }
 
 .info p {
   font-size: 18px;
-  color: #555;
+  color: #d5d5d5;
   margin-bottom: 10px;
 }
 
@@ -82,7 +82,7 @@ h3 {
 
 .info .address {
   font-style: italic;
-  color: #777;
+  color: #c9c8c8;
 }
 
 .info .hours {
