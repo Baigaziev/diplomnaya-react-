@@ -3,6 +3,7 @@
   animation: fadeIn 0.5s ease-in-out;
   color: blueviolet;
   text-align: center;
+  margin-top: 20px;
 }
 
 @keyframes fadeIn {
