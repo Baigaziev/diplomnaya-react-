@@ -9,6 +9,7 @@ import { Slider } from "../Slide/Slide";
 import Footer from "../Footer/Footer";
 import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
+import Search from "../Search/Search";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -23,7 +24,9 @@ export default function Layout(props) {
         <Nav />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
+        
         <CartLink />
+        <Search />
         <Auth />
       </header>
 
