@@ -9,7 +9,7 @@
 }
 
 .footer-logo img {
-  width: 120px;
+  width: 200px;
   height: 100px;
 }
 
@@ -56,6 +56,9 @@
   flex-direction: column;
   margin-left: 20px;
 }
+.footer-contact-info a {
+  color: blueviolet;
+}
 
 .footer-contact-info p {
   margin-bottom: 5px;
@@ -70,7 +73,31 @@
 }
 
 .footer-social-icons a {
+  position: relative;
+  display: inline-block;
   margin-bottom: 10px;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+.footer-social-icons a::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 2px;
+  height: 10px;
+  background-color: #fff;
+  transform: translateX(-50%);
+  transition: height 0.3s ease-in-out;
+}
+
+.footer-social-icons a:hover::before {
+  height: 20px;
 }
 
 .footer-social-icons img {
