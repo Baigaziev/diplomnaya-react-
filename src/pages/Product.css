@@ -10,9 +10,9 @@
   color: yellow;
 }
 .Product img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
+ width: 500px;
+ margin-top: 20px;
+ 
 }
 
 .Product h1 {
